@@ -1,0 +1,35 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block title %} Login Page | Authentation {% endblock %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'login/style.css' %}">
+{% endblock %}
+
+{% block body%}
+<div class="container">
+  <div class="login_box">
+    <div class="login_title">
+      <h2>Authenticate user can pass this step</h2>
+    </div>
+    <div class="login_form_box">
+      <form class="login_form" method="post">
+        {% csrf_token %}
+        <div class="input_user_name">
+          {{ form.username }}
+        </div>
+        <div class="input_user_password">
+          {{ form.password }}
+        </div>
+        <div class="login_button">
+          <button id="button" type="submit" name="button">SIGN IN</button>
+        </div>
+      </form>
+      <div class="register_link">
+        <a href="{% url 'register' %}">Get yourself legal?</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

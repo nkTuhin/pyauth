@@ -1,0 +1,287 @@
+.body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #252a34;
+}
+
+.container {}
+
+/* Help text section */
+.helptext_section {
+  background-color: #f4f9f4;
+  width: 550px;
+  height: auto;
+  /* margin: 0 auto; */
+  float: left;
+  margin-left: 50px;
+  margin-top: 150px;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.helptext_box {
+  padding: 5px;
+  height: auto;
+}
+
+.helptext p {
+  padding: 7px;
+  width: 500px;
+  /* text-align: center; */
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 2px;
+  border-style: none;
+  border-left: 4px solid #bc2525;
+  border-right: 4px solid #bc2525;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  color: #fdfdfd;
+  background-color: #e37070;
+  overflow: hidden;
+}
+
+.helptext {
+  padding: 5px;
+}
+
+.helptext_tips {
+  background-color: #fdfdfd;
+  padding: 10px;
+  margin: 5px;
+  width: 150px;
+  height: 65px;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-left: 170px;
+}
+
+.helptext_tips h2 {
+  text-align: center;
+  padding: 14px;
+  font-size: 20px;
+  margin-top: 5px;
+  background-color: #2a363b;
+  color: #fdfdfd;
+  font-family: 'Major Mono Display', monospace;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Login style */
+.register_box {
+  background-color: #252a34;
+  width: 650px;
+  height: auto;
+  /* margin: 0 auto; */
+  float: right;
+  margin-right: 80px;
+  margin-top: 50px;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.register_title {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.register_title h2 {
+  font-size: 30px;
+  color: #fafafa;
+  background-color: #222831;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  box-shadow: 0 5px 15px #f0f5f9;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.register_form_box {
+  /* background-color: #393e46; */
+  padding: 10px;
+  margin: 10px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.register_form {
+  padding: 5px;
+  margin: 10px;
+  margin-left: 150px;
+}
+
+.input_user_name {
+  margin-bottom: 10px;
+}
+
+.input_user_name #user_name {
+  padding: 7px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 2px;
+  border-style: none;
+  border-left: 4px solid #fdfdfd;
+  /* border-right: 2px solid #fdfdfd; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  color: #fdfdfd;
+  background-color: #222831;
+}
+
+.input_user_name #id_username {
+  padding: 7px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 2px;
+  border-style: none;
+  border-left: 4px solid #fdfdfd;
+  /* border-right: 2px solid #fdfdfd; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  color: #fdfdfd;
+  background-color: #222831;
+}
+
+.input_user_name #user_name::placeholder {
+  color: #eaffd0;
+}
+
+.input_user_email #user_email {
+  padding: 7px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 2px;
+  border-style: none;
+  border-right: 4px solid #1fab89;
+  /* border-right: 2px solid #fdfdfd; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  color: #fdfdfd;
+  background-color: #222831;
+  margin-bottom: 10px;
+}
+
+.input_user_email #user_email::placeholder {
+  color: #eaffd0;
+}
+
+.input_user_password {
+  margin-bottom: 10px;
+}
+
+.input_user_password #password {
+  padding: 7px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 2px;
+  border-style: none;
+  border-left: 4px solid #ff6f3c;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  color: #fdfdfd;
+  background-color: #222831;
+}
+
+.input_user_password #password::placeholder {
+  color: #fefdca;
+}
+
+.input_user_password #confirm_password {
+  padding: 7px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 2px;
+  border-style: none;
+  border-right: 4px solid #ff6f3c;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  color: #fdfdfd;
+  background-color: #222831;
+}
+
+.input_user_password #confirm_password::placeholder {
+  color: #fefdca;
+}
+
+.register_button {
+  margin-left: 100px;
+}
+
+.register_button #button {
+  padding: 10px;
+  width: 130px;
+  height: auto;
+  border-radius: 2px;
+  border-style: none;
+  border: 2px solid #fdfdfd;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  color: #fdfdfd;
+  background-color: #222831;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.register_button #button:hover {
+  color: #222831;
+  background-color: #fdfdfd;
+  border: 2px solid #222831;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login_link {
+  padding: 5px;
+  margin: 10px;
+  margin-left: 150px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.login_link a {
+  text-decoration: none;
+  padding: 10px;
+  width: 130px;
+  height: 90px;
+  border-radius: 2px;
+  border-style: none;
+  border: 2px solid #f1c40f;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  color: #e3e3e3;
+  background-color: #222831;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-left: 30px;
+  overflow: hidden;
+}

@@ -1,0 +1,66 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block title %} Register Page | Authentication {% endblock %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'login/regtest.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <!-- Help text section -->
+  <div class="helptext_section">
+    <div class="helptext_box">
+      <div class="helptext">
+        <div class="helptext_tips">
+          <h2>Tips:</h2>
+        </div>
+        <div class="">
+          <p>Enter the same password as before, for verification.</p>
+        </div>
+        <div class="">
+          <p>Your password can&#39;t be too similar to your other personal information.</p>
+        </div>
+        <div class="">
+          <p>Your password must contain at least 8 characters.</p>
+        </div>
+        <div class="">
+          <p>Your password can&#39;t be a commonly used password.</p>
+        </div>
+        <div class="">
+          <p>Your password can&#39;t be entirely numeric.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="register_box">
+    <div class="register_title">
+      <h2>Make yourself legal user</h2>
+    </div>
+    <div class="register_form_box">
+      <form class="register_form" action="#" method="post">
+        {% csrf_token %}
+        <div class="input_user_name">
+          {{ form.username }}
+        </div>
+        <div class="input_user_email">
+          {{ form.email }}
+        </div>
+        <div class="input_user_password">
+          {{ form.password1 }}
+        </div>
+        <div class="input_user_password">
+          {{ form.password2 }}
+        </div>
+        <div class="register_button">
+          <button id="button" type="submit" name="button">SIGN UP</button>
+        </div>
+      </form>
+      <div class="login_link">
+        <a href="{% url 'login' %}">If you authenticate?</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

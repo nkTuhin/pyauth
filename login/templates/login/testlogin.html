@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Test Login</title>
+</head>
+
+<body>
+  <!-- Alart message -->
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <!-- End alart message -->
+  <div class="container">
+    <form class="" action='' method="post">
+      {% csrf_token %}
+      {{ form }}
+  </div><button type="submit">LOGIN</button>
+  </form>
+  </div>
+</body>
+
+</html>

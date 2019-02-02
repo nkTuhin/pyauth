@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    {% block title %}{% endblock %}
+  </title>
+  <!-- Link -->
+
+  <!-- Google fonts API link -->
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|
+  Charm|Cinzel|Cuprum|EB+Garamond|Fanwood+Text|Fontdiner+Swanky|
+  IM+Fell+DW+Pica|Josefin+Sans|Josefin+Slab|Major+Mono+Display|
+  Megrim|Neucha|Nixie+One|Open+Sans+Condensed:300|Quicksand|Righteous|Snippet|Tienne"
+    rel="stylesheet">
+  <!-- CSS style link -->
+  {% block link %} {% endblock %}
+
+</head>
+
+<body class="body">
+  {% block body %} {% endblock %}
+</body>
+
+</html>
