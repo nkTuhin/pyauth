@@ -1,3 +1,3 @@
 # Auth system .
 # Build with python web framework called Django.
-# Hand on pure css design.
+# Hands on pure CSS design.
